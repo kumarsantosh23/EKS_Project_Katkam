@@ -1,7 +1,7 @@
 module "vpc" {
   source = "terraform-aws-modules/vpc/aws"
 
-  name = "katkam"
+  name = var.name
   cidr = var.vpc_cidr
 
   azs             = ["us-west-2a", "us-west-2b", "us-west-2c"]
