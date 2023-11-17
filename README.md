@@ -21,7 +21,7 @@ Run this below terraform commands sequentially
     terraform plan
 
     terraform apply
-    
+
 ## Requirements
 
 | Name | Version |
