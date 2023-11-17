@@ -28,8 +28,8 @@ variable "instance_type" {
   default     = "t2.micro"
 }
 
-variable "cluster_name" {
-  description = "cluster name
+variable "name" {
+  description = "cluster name"
   type        = string
   default     = "katkam"
 }
