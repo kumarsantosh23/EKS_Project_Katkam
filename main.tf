@@ -2,7 +2,7 @@ module "eks" {
   source  = "terraform-aws-modules/eks/aws"
   version = "~> 19.0"
 
-  cluster_name    = "my_cluster_katkam_test"
+  cluster_name    = var.cluster_name
   cluster_version = "1.27"
 
   cluster_endpoint_public_access = true
@@ -30,11 +30,11 @@ module "eks" {
       capacity_type  = var.capacity_type
 
       update_config = {
-        max_unavailable           = 1
-        max_surge                 = 1
-        max_batch_size            = 1
-        drain_max_timeout_seconds = 600
-      }
+          max_unavailable  = 1
+          max_surge        = 1
+          max_batch_size   = 1
+          drain_max_timeout_seconds = 600
+        }
     }
   }
 }

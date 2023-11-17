@@ -28,6 +28,12 @@ variable "instance_type" {
   default     = "t2.micro"
 }
 
+variable "cluster_name" {
+  description = "cluster name
+  type        = string
+  default     = "katkam"
+}
+
 variable "capacity_type" {
   description = "The Capacity of EKS node group ON_DEMAND or SPOT"
   type        = string
