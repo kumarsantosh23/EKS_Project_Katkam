@@ -22,11 +22,11 @@ terraform {
 }
 
 provider "aws" {
-    region = "us-west-2"
-    default_tags {
-        tags = {
-          OWNER = "katkam_s"
-          CATEGORY   = "ENG_ASSESSMENT"
-        }
+  region = "us-west-2"
+  default_tags {
+    tags = {
+      OWNER    = "katkam_s"
+      CATEGORY = "ENG_ASSESSMENT"
     }
+  }
 }

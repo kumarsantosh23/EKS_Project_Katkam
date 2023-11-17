@@ -33,6 +33,8 @@ No resources.
 | <a name="input_eks_max_size"></a> [eks\_max\_size](#input\_eks\_max\_size) | The maximum size of the EKS node group | `number` | `3` | no |
 | <a name="input_eks_min_size"></a> [eks\_min\_size](#input\_eks\_min\_size) | The minimum size of the EKS node group | `number` | `1` | no |
 | <a name="input_instance_type"></a> [instance\_type](#input\_instance\_type) | The Instance type for the EKS node group | `string` | `"t2.micro"` | no |
+| <a name="input_private_subnets"></a> [private\_subnets](#input\_private\_subnets) | n/a | `list(string)` | <pre>[<br>  "10.0.1.0/24",<br>  "10.0.2.0/24",<br>  "10.0.3.0/24"<br>]</pre> | no |
+| <a name="input_public_subnets"></a> [public\_subnets](#input\_public\_subnets) | n/a | `list(string)` | <pre>[<br>  "10.0.101.0/24",<br>  "10.0.102.0/24",<br>  "10.0.103.0/24"<br>]</pre> | no |
 
 ## Outputs
 
