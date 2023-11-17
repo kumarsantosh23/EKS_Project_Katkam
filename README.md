@@ -21,7 +21,7 @@ Run this below terraform commands sequentially
     terraform plan
 
     terraform apply
-
+    
 ## Requirements
 
 | Name | Version |
@@ -71,7 +71,7 @@ Run this below terraform commands sequentially
 
 | Name | Description |
 |------|-------------|
-| <a name="output_cluster_endpoint"></a> [cluster\_endpoint](#output\_cluster\_endpoint) | The name of the EKS cluster |
+| <a name="output_cluster_endpoint"></a> [cluster\_endpoint](#output\_cluster\_endpoint) | The end point EKS cluster |
 | <a name="output_cluster_name"></a> [cluster\_name](#output\_cluster\_name) | The name of the EKS cluster |
-| <a name="output_vpc_arn"></a> [vpc\_arn](#output\_vpc\_arn) | The name of the EKS cluster |
-| <a name="output_vpc_id"></a> [vpc\_id](#output\_vpc\_id) | The name of the EKS cluster |
+| <a name="output_vpc_arn"></a> [vpc\_arn](#output\_vpc\_arn) | The arn of vpc |
+| <a name="output_vpc_id"></a> [vpc\_id](#output\_vpc\_id) | The vpc ID |
