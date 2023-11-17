@@ -16,8 +16,8 @@ module "eks" {
     }
   }
 
-  vpc_id                   = module.vpc.vpc_id          # Assuming you have another module for VPC creation
-  subnet_ids               = module.vpc.private_subnets # Replace with your private subnet IDs
+  vpc_id                   = module.vpc.vpc_id
+  subnet_ids               = module.vpc.private_subnets
   control_plane_subnet_ids = module.vpc.private_subnets
 
   eks_managed_node_groups = {

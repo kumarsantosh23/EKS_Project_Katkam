@@ -1,19 +1,19 @@
 variable "eks_min_size" {
   description = "The minimum size of the EKS node group"
   type        = number
-  default     = 1
+  default     = 3
 }
 
 variable "eks_max_size" {
   description = "The maximum size of the EKS node group"
   type        = number
-  default     = 3
+  default     = 6
 }
 
 variable "eks_desired_size" {
   description = "The desired size of the EKS node group"
   type        = number
-  default     = 1
+  default     = 4
 }
 
 variable "eks_ami_type" {
@@ -34,6 +34,11 @@ variable "capacity_type" {
   default     = "ON_DEMAND"
 }
 
+variable "vpc_cidr" {
+  type    = string
+  default = "10.0.0.0/16"
+}
+
 variable "private_subnets" {
   type    = list(string)
   default = ["10.0.1.0/24", "10.0.2.0/24", "10.0.3.0/24"]
@@ -42,4 +47,10 @@ variable "private_subnets" {
 variable "public_subnets" {
   type    = list(string)
   default = ["10.0.101.0/24", "10.0.102.0/24", "10.0.103.0/24"]
+}
+
+variable "namespace" {
+  description = "The Namespace to be created in EKS cluster"
+  type        = string
+  default     = "katkam"
 }
