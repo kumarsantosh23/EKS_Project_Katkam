@@ -1,3 +1,27 @@
+Pre-requisites:  
+
+    Terraform installation
+
+    AWS CLI
+
+    AWS account Security key and Access key
+
+Below are the steps to spin up basic EKS cluster
+
+    Export the AWS keys with below commands
+
+        Export AWS_ AWS_ACCESS_KEY_ID=”ACEESSKEY”
+
+        Export AWS_SECRET_ACCESS_KEY=”Secretaccesskey”
+
+Run this below terraform commands sequentially
+
+    terraform init  
+
+    terraform plan
+
+    terraform apply
+
 ## Requirements
 
 | Name | Version |
@@ -45,4 +69,9 @@
 
 ## Outputs
 
-No outputs.
+| Name | Description |
+|------|-------------|
+| <a name="output_cluster_endpoint"></a> [cluster\_endpoint](#output\_cluster\_endpoint) | The name of the EKS cluster |
+| <a name="output_cluster_name"></a> [cluster\_name](#output\_cluster\_name) | The name of the EKS cluster |
+| <a name="output_vpc_arn"></a> [vpc\_arn](#output\_vpc\_arn) | The name of the EKS cluster |
+| <a name="output_vpc_id"></a> [vpc\_id](#output\_vpc\_id) | The name of the EKS cluster |
