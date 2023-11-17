@@ -30,11 +30,11 @@ module "eks" {
       capacity_type  = var.capacity_type
 
       update_config = {
-          max_unavailable  = 1
-          max_surge        = 1
-          max_batch_size   = 1
-          drain_max_timeout_seconds = 600
-        }
+        max_unavailable           = 1
+        max_surge                 = 1
+        max_batch_size            = 1
+        drain_max_timeout_seconds = 600
+      }
     }
   }
 }
